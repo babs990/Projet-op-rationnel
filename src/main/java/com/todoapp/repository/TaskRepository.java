@@ -1,10 +1,11 @@
 package com.todoapp.repository;
 
-import com.todoapp.entity.Task;
 import org.springframework.data.jpa.repository.JpaRepository;
+import com.todoapp.entity.Task;
 
 /**
- * Repository pour accéder aux données des tâches
+ * Repository permettant d'accéder à la base de données
  */
-public interface TaskRepository extends JpaRepository<Task, Long> {
+public interface TaskRepository extends JpaRepository<Task,Long> {
+
 }

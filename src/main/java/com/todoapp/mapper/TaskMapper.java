@@ -1,16 +1,16 @@
 package com.todoapp.mapper;
 
-import com.todoapp.dto.TaskDTO;
 import com.todoapp.entity.Task;
+import com.todoapp.dto.TaskDTO;
 
 /**
  * Classe utilitaire permettant de convertir Entity ↔ DTO
  */
 public class TaskMapper {
 
-    public static TaskDTO toDTO(Task task) {
+    public static TaskDTO toDTO(Task task){
 
-        TaskDTO dto = new TaskDTO();
+        TaskDTO dto=new TaskDTO();
 
         dto.setId(task.getId());
         dto.setTitle(task.getTitle());
@@ -20,9 +20,9 @@ public class TaskMapper {
         return dto;
     }
 
-    public static Task toEntity(TaskDTO dto) {
+    public static Task toEntity(TaskDTO dto){
 
-        Task task = new Task();
+        Task task=new Task();
 
         task.setTitle(dto.getTitle());
         task.setDescription(dto.getDescription());
